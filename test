@@ -1,0 +1,26 @@
+from InsertAtCommand import InsertAtCommand
+
+def test_insert_at_command():
+    # Initial list
+    source_list = ["apple", "banana", "orange"]
+
+    # Instantiate InsertAtCommand
+    insert_command = InsertAtCommand(source_list, 1, "grape")
+
+    # Execute the command
+    insert_command.execute()
+    print("List after execution:", source_list)
+    # Verify list state after insertion
+    
+    # Undo the insertion
+    insert_command.undo()
+    print("List after undo:", source_list)
+
+    # Verify list state after undo
+    assert source_list == ["apple", "banana", "orange"]
+
+    # Add more test cases for edge cases and scenarios
+    # For example, test when index is out of bounds, etc.
+
+# Run the test
+test_insert_at_command()

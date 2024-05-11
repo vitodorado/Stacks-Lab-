@@ -1,0 +1,30 @@
+Adding chips
+PASS: Undo stack size is 1
+Adding cookies
+PASS: Undo stack size is 2
+Adding waffles
+PASS: Undo stack size is 3
+Adding syrup
+PASS: Undo stack size is 4
+Adding ice cream
+PASS: Undo stack size is 5
+Adding lettuce
+PASS: Undo stack size is 6
+Verfied list content: chips,cookies,waffles,syrup,ice cream,lettuce
+Removing at index 2
+PASS: Undo stack size is 7
+Verfied list content: chips,cookies,syrup,ice cream,lettuce
+Removing at index 2
+PASS: Undo stack size is 8
+Verfied list content: chips,cookies,ice cream,lettuce
+Removing at index 3
+PASS: Undo stack size is 9
+Verfied list content: chips,cookies,ice cream
+Removing at index 0
+PASS: Undo stack size is 10
+Verfied list content: cookies,ice cream
+Executing undo
+PASS: Undo stack size is 9
+FAIL:
+        Expected items: ['chips', 'cookies', 'ice cream']
+        Actual items:   ['cookies', 'ice cream']

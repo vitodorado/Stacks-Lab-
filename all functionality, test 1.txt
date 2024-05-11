@@ -1,0 +1,34 @@
+Adding butter
+PASS: Undo stack size is 1
+Verfied list content: butter
+Adding bread
+PASS: Undo stack size is 2
+Adding tea
+PASS: Undo stack size is 3
+Verfied list content: butter,bread,tea
+Executing undo
+PASS: Undo stack size is 2
+Verfied list content: butter,bread
+Adding jam
+PASS: Undo stack size is 3
+Adding jelly
+PASS: Undo stack size is 4
+Verfied list content: butter,bread,jam,jelly
+Executing undo
+PASS: Undo stack size is 3
+Verfied list content: butter,bread,jam
+Swapping at indices 0 and 2
+PASS: Undo stack size is 4
+Verfied list content: jam,bread,butter
+Executing undo
+PASS: Undo stack size is 3
+Verfied list content: butter,bread,jam
+Executing undo
+PASS: Undo stack size is 2
+Executing undo
+PASS: Undo stack size is 1
+Verfied list content: butter
+Removing at index 0
+PASS: Undo stack size is 2
+PASS: List is empty
+Executing undo

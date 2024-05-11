@@ -1,0 +1,17 @@
+Adding eggs
+PASS: Undo stack size is 1
+Adding bacon
+PASS: Undo stack size is 2
+Adding cereal
+PASS: Undo stack size is 3
+Verfied list content: eggs,bacon,cereal
+Adding bread
+PASS: Undo stack size is 4
+Removing at index 2
+PASS: Undo stack size is 5
+Verfied list content: eggs,bacon,bread
+Executing undo
+PASS: Undo stack size is 4
+FAIL:
+        Expected items: ['eggs', 'bacon', 'cereal', 'bread']
+        Actual items:   ['eggs', 'bacon', 'bread']
